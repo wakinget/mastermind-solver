@@ -1,0 +1,89 @@
+name: Implementation Task
+description: Structured implementation issue for agent-friendly development.
+title: "[Task] "
+labels:
+  - task
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: What background does an implementer need to understand this task?
+      placeholder: Describe the project context and why this task matters.
+    validations:
+      required: true
+
+  - type: textarea
+    id: primary_goal
+    attributes:
+      label: Primary goal
+      description: What is the main outcome this issue should deliver?
+      placeholder: State the core objective in one or two paragraphs.
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What is in scope for this issue?
+      placeholder: List the concrete implementation items that should be included.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance criteria
+      description: How will we know this issue is complete?
+      placeholder: |
+        - [ ] Criterion 1
+        - [ ] Criterion 2
+        - [ ] Criterion 3
+    validations:
+      required: true
+
+  - type: textarea
+    id: testing
+    attributes:
+      label: Testing requirements
+      description: What tests or validation paths should be added?
+      placeholder: Describe unit tests, integration tests, parity tests, or demo paths.
+    validations:
+      required: true
+
+  - type: textarea
+    id: docs
+    attributes:
+      label: Documentation requirements
+      description: What documentation should be updated or added?
+      placeholder: README, docs/, inline docstrings, usage examples, design notes.
+    validations:
+      required: true
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: What issues, modules, or milestones should exist first?
+      placeholder: List related issues or architectural prerequisites.
+    validations:
+      required: false
+
+  - type: textarea
+    id: non_goals
+    attributes:
+      label: Non-goals
+      description: What should explicitly not be attempted in this issue?
+      placeholder: List out-of-scope items to avoid scope creep.
+    validations:
+      required: true
+
+  - type: textarea
+    id: follow_on
+    attributes:
+      label: Likely follow-on work
+      description: What tasks are most likely to come next after this issue lands?
+      placeholder: List one to three likely next steps.
+    validations:
+      required: false

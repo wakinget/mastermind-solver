@@ -1,0 +1,71 @@
+name: Epic / Milestone
+description: High-level issue for defining a milestone, epic, or major pillar of work.
+title: "[Epic] "
+labels:
+  - epic
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What major capability or milestone does this epic define?
+      placeholder: Summarize the milestone in a few paragraphs.
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: Why is this milestone important in the larger roadmap?
+      placeholder: Explain why this milestone matters and what it unlocks.
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What work belongs under this milestone?
+      placeholder: List the major areas and expected deliverables.
+    validations:
+      required: true
+
+  - type: textarea
+    id: exit_criteria
+    attributes:
+      label: Exit criteria
+      description: What objective conditions indicate that this milestone is complete?
+      placeholder: |
+        - [ ] Exit criterion 1
+        - [ ] Exit criterion 2
+        - [ ] Exit criterion 3
+    validations:
+      required: true
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: What earlier milestones or issues should be complete first?
+      placeholder: List prerequisite milestones or issues.
+    validations:
+      required: false
+
+  - type: textarea
+    id: candidate_subissues
+    attributes:
+      label: Candidate sub-issues
+      description: What implementation tasks are likely to sit under this epic?
+      placeholder: List candidate sub-issues or workstreams.
+    validations:
+      required: true
+
+  - type: textarea
+    id: non_goals
+    attributes:
+      label: Non-goals
+      description: What is intentionally out of scope for this milestone?
+      placeholder: List the work that should not be pulled into this epic.
+    validations:
+      required: true
